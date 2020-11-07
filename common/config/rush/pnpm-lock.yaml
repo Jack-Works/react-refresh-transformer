@@ -1,0 +1,25 @@
+dependencies:
+  '@rush-temp/react-refresh-typescript': 'file:projects/react-refresh-typescript.tgz'
+  typescript: 4.0.5
+lockfileVersion: 5.1
+packages:
+  /typescript/4.0.5:
+    dev: false
+    engines:
+      node: '>=4.2.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-ywmr/VrTVCmNTJ6iV2LwIrfG1P+lv6luD8sUJs+2eI9NLGigaN+nUQc13iHqisq7bra9lnmUSYqbJvegraBOPQ==
+  'file:projects/react-refresh-typescript.tgz':
+    dependencies:
+      typescript: 4.0.5
+    dev: false
+    name: '@rush-temp/react-refresh-typescript'
+    resolution:
+      integrity: sha512-5npHA/zBhDq6Q3QnCAL9eB0n02KTNQRIo9NID6eNrMs1VLE2zzdsCPYhMFrb9oemys4Zp9FHNKp4OuLiCgiQFg==
+      tarball: 'file:projects/react-refresh-typescript.tgz'
+    version: 0.0.0
+registry: ''
+specifiers:
+  '@rush-temp/react-refresh-typescript': 'file:./projects/react-refresh-typescript.tgz'
+  typescript: ~4.0.5

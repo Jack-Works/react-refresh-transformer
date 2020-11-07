@@ -1,0 +1,31 @@
+{
+    "name": "react-refresh-typescript",
+    "version": "1.0.4",
+    "description": "React Refresh transformer for TypeScript",
+    "main": "index.js",
+    "scripts": {
+        "test": "ts-jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Jack-Works/react-refresh-transformer.git"
+    },
+    "keywords": [
+        "react",
+        "refresh",
+        "transformer",
+        "typescript"
+    ],
+    "author": "Jack Works",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Jack-Works/react-refresh-transformer/issues"
+    },
+    "homepage": "https://github.com/Jack-Works/react-refresh-transformer#readme",
+    "peerDependencies": {
+        "typescript": "^4"
+    },
+    "devDependencies": {
+        "typescript": "~4.0.5"
+    }
+}
