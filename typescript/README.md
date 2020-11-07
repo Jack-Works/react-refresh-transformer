@@ -4,11 +4,6 @@ This package implements the plugin to integrate Fast Refresh into bundlers. Fast
 
 This package is primarily aimed at developers of bundler plugins. If you’re working on one, here is [a rough guide](https://github.com/facebook/react/issues/16604#issuecomment-528663101) for Fast Refresh integration using this package.
 
-## Other transpilers
-
--   [react-refresh/babel](https://github.com/facebook/react/tree/master/packages/react-refresh) (official)
--   react-refresh-typescript (you're here!)
-
 ## Minimal requirement
 
 -   TypeScript 4.0
