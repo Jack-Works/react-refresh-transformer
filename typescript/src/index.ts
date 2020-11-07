@@ -653,10 +653,15 @@ function startsWithLowerCase(str: string) {
 }
 
 export type Options = {
+    /** @default "$RefreshReg$" */
     readonly refreshReg?: string
+    /** @default "$RefreshSig$" */
     readonly refreshSig?: string
+    /** @default false */
     readonly emitFullSignatures?: boolean
+    /** Provide your own TypeScript instance. */
     readonly ts?: typeof import('typescript')
+    /** Provide your own hash function when `emitFullSignatures` is `false` */
     readonly hashSignature?: (signature: string) => string
 }
 type HandledFunction = FunctionDeclaration | FunctionExpression | ArrowFunction
