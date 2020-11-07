@@ -17,7 +17,7 @@ This package is primarily aimed at developers of bundler plugins. If you’re wo
     exclude: /node_modules/,
     options: {
         getCustomTransformers: () => ({
-            before: [require('react-refresh/typescript')()]
+            before: [require('react-refresh-typescript')()]
         }),
     }
 }
@@ -26,7 +26,7 @@ This package is primarily aimed at developers of bundler plugins. If you’re wo
 ## Example (with raw TypeScript transpileModule API)
 
 ```js
-import refresh from 'react-refresh/typescript';
+import refresh from 'react-refresh-typescript';
 const out = ts.transpileModule('const App = () => <Something />', {
     compilerOptions: {
         target: ts.ScriptTarget.ESNext,

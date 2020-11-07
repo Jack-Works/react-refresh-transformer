@@ -4,7 +4,8 @@
     "description": "React Refresh transformer for TypeScript",
     "scripts": {
         "test": "jest",
-        "build": "pika-pack build"
+        "build": "pika-pack build",
+        "version": "npm run build"
     },
     "repository": {
         "type": "git",
