@@ -2,9 +2,9 @@
     "name": "react-refresh-typescript",
     "version": "1.0.4",
     "description": "React Refresh transformer for TypeScript",
-    "main": "index.js",
     "scripts": {
-        "test": "jest"
+        "test": "jest",
+        "build": "pika-pack build"
     },
     "repository": {
         "type": "git",
@@ -32,6 +32,19 @@
         "jest": "~26.6.3",
         "@types/jest": "~26.0.15",
         "jest-file-snapshot": "~0.5.0",
-        "@types/node": "~14.14.6"
+        "@types/node": "~14.14.6",
+        "@pika/pack": "~0.5.0",
+        "@pika/plugin-ts-standard-pkg": "~0.9.2",
+        "@pika/plugin-build-node": "~0.9.2"
+    },
+    "@pika/pack": {
+        "pipeline": [
+            [
+                "@pika/plugin-ts-standard-pkg"
+            ],
+            [
+                "@pika/plugin-build-node"
+            ]
+        ]
     }
 }

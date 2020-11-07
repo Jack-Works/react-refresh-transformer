@@ -37,6 +37,22 @@ const out = ts.transpileModule('const App = () => <Something />', {
 }).outputText,
 ```
 
+## Import from Deno
+
+The entry point is `src/deno.ts`.
+
+You must have [an import map for deno](https://deno.land/manual/linking_to_external_code/import_maps) that specify `typescript` as a peer dependency.
+
+For example:
+
+```json
+{
+    "imports": {
+        "typescript": "https://esm.sh/typescript"
+    }
+}
+```
+
 ## Options
 
 ```ts

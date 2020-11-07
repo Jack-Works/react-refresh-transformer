@@ -1,11 +1,13 @@
 {
     "compilerOptions": {
-        "target": "ES2018",
+        "target": "ES2020",
         "module": "ESNext",
         "strict": true,
         "moduleResolution": "node",
-        "esModuleInterop": true
+        "esModuleInterop": true,
+        "rootDir": "./src/"
     },
+    "include": ["./src/*"],
     "ts-node": {
         "transpileOnly": true,
         "compilerOptions": {
