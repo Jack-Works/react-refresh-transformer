@@ -7,4 +7,4 @@ This package is primarily aimed at developers of bundler plugins. If you’re wo
 ## Transpilers
 
 -   [react-refresh/babel](https://github.com/facebook/react/tree/master/packages/react-refresh) (maintained by Facebook)
--   [react-refresh-typescript](https://github.com/Jack-Works/react-refresh-transformer/tree/main/typescript) (maintained in this monorepo)
+-   [react-refresh-typescript](https://github.com/Jack-Works/react-refresh-transformer/tree/main/typescript) (maintained in this repo)

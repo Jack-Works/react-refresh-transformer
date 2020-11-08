@@ -39,7 +39,7 @@ const out = ts.transpileModule('const App = () => <Something />', {
 
 ## Import from Deno
 
-The entry point is `src/deno.ts`.
+The entry point is [`src/deno.ts`](https://raw.githubusercontent.com/Jack-Works/react-refresh-transformer/main/typescript/src/deno.ts).
 
 You must have [an import map for deno](https://deno.land/manual/linking_to_external_code/import_maps) that specify `typescript` as a peer dependency.
 
@@ -52,6 +52,10 @@ For example:
     }
 }
 ```
+
+### Without import-map
+
+If you don't want to set up an import map, you can import [the core file](https://cdn.jsdelivr.net/npm/react-refresh-typescript@latest/dist-src/core.js) and provide TypeScript via `options.ts`.
 
 ## Options
 

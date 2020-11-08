@@ -26,18 +26,7 @@
     "peerDependencies": {
         "typescript": "^4"
     },
-    "devDependencies": {
-        "typescript": "~4.0.5",
-        "ts-node": "~9.0.0",
-        "ts-jest": "~26.4.3",
-        "jest": "~26.6.3",
-        "@types/jest": "~26.0.15",
-        "jest-file-snapshot": "~0.5.0",
-        "@types/node": "~14.14.6",
-        "@pika/pack": "~0.5.0",
-        "@pika/plugin-ts-standard-pkg": "~0.9.2",
-        "@pika/plugin-build-node": "~0.9.2"
-    },
+    "devDependencies": {},
     "@pika/pack": {
         "pipeline": [
             [
