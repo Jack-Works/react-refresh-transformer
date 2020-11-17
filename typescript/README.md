@@ -7,6 +7,7 @@ This package is primarily aimed at developers of bundler plugins. If you’re wo
 ## Minimal requirement
 
 -   TypeScript 4.0
+-   `module` (not `target`) set to `es2015` or later (not work with `CommonJS` currently. If you really need it, please vote in [#3](https://github.com/Jack-Works/react-refresh-transformer/issues/3))
 
 ## Example (with ts-loader)
 
