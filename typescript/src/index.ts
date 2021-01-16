@@ -2,6 +2,7 @@
 import core from './core'
 import typescript from 'typescript'
 import crypto from 'crypto'
+export type { Options } from './core'
 const nodeWrapper: typeof core = function (option = {}) {
     return core({
         ts: typescript,
