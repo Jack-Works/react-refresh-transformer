@@ -18,7 +18,7 @@ This package is primarily aimed at developers of bundler plugins. If you’re wo
     exclude: /node_modules/,
     options: {
         getCustomTransformers: () => ({
-            before: [require('react-refresh-typescript').default()]
+            before: [require('react-refresh-typescript')()]
         }),
     }
 }
