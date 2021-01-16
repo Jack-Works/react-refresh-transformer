@@ -1,14 +1,31 @@
-devDependencies:
-  '@pika/pack': 0.5.0
-  '@pika/plugin-build-node': 0.9.2
-  '@pika/plugin-ts-standard-pkg': 0.9.2
-  '@types/jest': 26.0.15
-  '@types/node': 14.14.6
-  jest: 26.6.3_ts-node@9.0.0
-  jest-file-snapshot: 0.5.0
-  ts-jest: 26.4.3_jest@26.6.3+typescript@4.0.5
-  ts-node: 9.0.0_typescript@4.0.5
-  typescript: 4.0.5
+importers:
+  .:
+    devDependencies:
+      '@pika/cli': 0.2.0
+      '@pika/pack': 0.5.0
+      '@pika/plugin-build-node': 0.9.2
+      '@pika/plugin-ts-standard-pkg': 0.9.2
+      '@types/jest': 26.0.15
+      '@types/node': 14.14.6
+      jest: 26.6.3_ts-node@9.0.0
+      jest-file-snapshot: 0.5.0
+      ts-jest: 26.4.3_jest@26.6.3+typescript@4.0.5
+      ts-node: 9.0.0_typescript@4.0.5
+      typescript: 4.0.5
+    specifiers:
+      '@pika/cli': ^0.2.0
+      '@pika/pack': ~0.5.0
+      '@pika/plugin-build-node': ~0.9.2
+      '@pika/plugin-ts-standard-pkg': ~0.9.2
+      '@types/jest': ~26.0.15
+      '@types/node': ~14.14.6
+      jest: ~26.6.3
+      jest-file-snapshot: ~0.5.0
+      ts-jest: ~26.4.3
+      ts-node: ~9.0.0
+      typescript: ~4.0.5
+  typescript:
+    specifiers: {}
 lockfileVersion: 5.2
 packages:
   /@babel/code-frame/7.10.4:
@@ -2859,7 +2876,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
-  /fsevents/2.2.1:
+  /fsevents/2.3.1:
     dev: true
     engines:
       node: ^8.16.0 || ^10.6.0 || >=11.0.0
@@ -2867,7 +2884,7 @@ packages:
     os:
       - darwin
     resolution:
-      integrity: sha512-bTLYHSeC0UH/EFXS9KqWnXuOl/wHK5Z/d+ghd5AsFMYN7wIGkUCOJyzy88+wJKkZPGON8u4Z9f6U4FdgURE9qA==
+      integrity: sha512-YR47Eg4hChJGAB1O3yEAOkGO+rlzutoICGqGo9EZ4lKWokzZRSyIW1QmTzqjtw8MJdj9srP869CuWw/hyzSiBw==
   /function-bind/1.1.1:
     dev: true
     resolution:
@@ -3806,7 +3823,7 @@ packages:
     engines:
       node: '>= 10.14.2'
     optionalDependencies:
-      fsevents: 2.2.1
+      fsevents: 2.3.1
     resolution:
       integrity: sha512-easWIJXIw71B2RdR8kgqpjQrbMRWQBgiBwXYEhtGUTaX+doCjBheluShdDMeR8IMfJiTqH4+zfhtg29apJf/8w==
   /jest-jasmine2/26.6.3_ts-node@9.0.0:
@@ -6695,14 +6712,3 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
-specifiers:
-  '@pika/pack': ~0.5.0
-  '@pika/plugin-build-node': ~0.9.2
-  '@pika/plugin-ts-standard-pkg': ~0.9.2
-  '@types/jest': ~26.0.15
-  '@types/node': ~14.14.6
-  jest: ~26.6.3
-  jest-file-snapshot: ~0.5.0
-  ts-jest: ~26.4.3
-  ts-node: ~9.0.0
-  typescript: ~4.0.5
