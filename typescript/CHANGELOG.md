@@ -1,5 +1,11 @@
 # Change Log - react-refresh-typescript
 
+## 2.0.0
+
+### Major changes
+
+-   Support `react-refresh` 0.10.0
+
 ## 1.1.1
 
 ### Minor changes
