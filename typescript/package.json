@@ -1,6 +1,6 @@
 {
     "name": "react-refresh-typescript",
-    "version": "1.1.1",
+    "version": "2.0.0",
     "description": "React Refresh transformer for TypeScript",
     "scripts": {
         "test": "jest",
@@ -24,7 +24,8 @@
     },
     "homepage": "https://github.com/Jack-Works/react-refresh-transformer#readme",
     "peerDependencies": {
-        "typescript": "^4"
+        "typescript": "^4",
+        "react-refresh": "0.10.x"
     },
     "devDependencies": {},
     "@pika/pack": {

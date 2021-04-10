@@ -305,6 +305,7 @@ export default function (opts: Options = {}): TransformerFactory<SourceFile> {
                         node = newFunction
                         // if it is an inner decl, we can update it safely
                         if (findAncestor(oldNode.parent, ts.isFunctionLike)) node = wrapped
+                        else if (isIIFEFunction(oldNode)) return wrapped
                     }
                 }
                 return updateStatements(node, addSignatureReport)
@@ -644,6 +645,12 @@ export default function (opts: Options = {}): TransformerFactory<SourceFile> {
         if (ts.isIdentifier(callee)) f = callee.text
         if (ts.isPropertyAccessExpression(callee)) f = callee.name.text
         if (['createElement', 'jsx', 'jsxs', 'jsxDEV'].includes(f)) return true
+        return false
+    }
+    function isIIFEFunction(f: HandledFunction): boolean {
+        let node: Node = f
+        while (ts.isParenthesizedExpression(node.parent)) node = node.parent
+        if (ts.isCallExpression(node.parent) && node.parent.expression === node) return true
         return false
     }
 }
