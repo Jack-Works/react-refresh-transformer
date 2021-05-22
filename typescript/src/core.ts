@@ -293,7 +293,7 @@ export default function (opts: Options = {}): TransformerFactory<SourceFile> {
                             )
                         }
                         node = newFunction
-                    } else {
+                    } else if (ts.isFunctionExpression(newFunction)) {
                         const wrapped = createHooksRegisterCall(
                             hooksTracker,
                             newFunction,
