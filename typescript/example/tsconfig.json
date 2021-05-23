@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "ESNext",
+        "target": "es2020",
+        "esModuleInterop": true,
+        "jsx": "react-jsxdev",
+        "moduleResolution": "Node"
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS",
+            "esModuleInterop": true
+        },
+        "transpileOnly": true
+    }
+}
