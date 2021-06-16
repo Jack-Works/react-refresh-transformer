@@ -6,7 +6,7 @@ import { Configuration as Dev } from 'webpack-dev-server'
 
 const config: Configuration = {
     mode: 'development',
-    devtool: false,
+    devtool: 'eval-source-map',
     // https://github.com/pmmmwh/react-refresh-webpack-plugin/issues/398
     entry: { main: './src/index.tsx' },
     resolve: { extensions: ['.ts', '.tsx', '.mjs', '.js'] },

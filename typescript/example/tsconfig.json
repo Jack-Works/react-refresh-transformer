@@ -4,7 +4,8 @@
         "target": "es2020",
         "esModuleInterop": true,
         "jsx": "react-jsxdev",
-        "moduleResolution": "Node"
+        "moduleResolution": "Node",
+        "sourceMap": true
     },
     "ts-node": {
         "compilerOptions": {
