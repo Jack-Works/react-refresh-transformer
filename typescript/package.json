@@ -1,6 +1,6 @@
 {
     "name": "react-refresh-typescript",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "React Refresh transformer for TypeScript",
     "types": "./src/index.ts",
     "main": "./src/index.ts",

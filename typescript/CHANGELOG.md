@@ -1,5 +1,11 @@
 # Change Log - react-refresh-typescript
 
+## 2.0.2
+
+### Bugfix
+
+-   fix: [not working with arrow functions](https://github.com/Jack-Works/react-refresh-transformer/issues/8)
+
 ## 2.0.1
 
 ### Minor changes
