@@ -1,4 +1,4 @@
-import type {
+import {
     ArrowFunction,
     Block,
     CallExpression,
@@ -9,12 +9,14 @@ import type {
     FunctionDeclaration,
     FunctionExpression,
     Identifier,
+    isFunctionLike,
     ModuleBlock,
     Node,
     NodeArray,
     SourceFile,
     Statement,
     TransformerFactory,
+    visitEachChild,
     VisitResult,
 } from 'typescript'
 
@@ -98,13 +100,28 @@ export default function (opts: Options = {}): TransformerFactory<SourceFile> {
                                 deferredStatements.push(...registerComponent(declaration.name))
                             }
                             if (isFunctionExpressionLikeOrFunctionDeclaration(init) && hooksSignatureMap.has(init)) {
-                                return factory.updateVariableDeclaration(
-                                    declaration,
-                                    declaration.name,
-                                    undefined,
-                                    declaration.type,
-                                    hooksSignatureMap.get(init)
+                                /**
+                                 * const Comp = () => <Comp />
+                                 * const Comp2 = function () { return <Comp /> }
+                                 *
+                                 * Reserve the function name
+                                 *
+                                 * See https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators-runtime-semantics-evaluation
+                                 */
+                                // this is a workaround to https://github.com/Jack-Works/react-refresh-transformer/issues/8
+                                // I don't have time to refactor it yet.
+                                let oneShot: any = false
+                                const sig = visitEachChild(
+                                    hooksSignatureMap.get(init)!,
+                                    (node) =>
+                                        oneShot
+                                            ? node
+                                            : isFunctionLike(node)
+                                            ? (oneShot = declaration.name as Identifier)
+                                            : node,
+                                    context
                                 )
+                                deferredStatements.push(factory.createExpressionStatement(sig))
                             }
                             return declaration
                         }

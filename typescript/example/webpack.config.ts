@@ -35,6 +35,7 @@ const config: Configuration = {
     // @ts-ignore
     devServer: {
         hot: true,
+        hotOnly: true,
     } as Dev,
 }
 export default config

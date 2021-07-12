@@ -12,10 +12,11 @@ function useFancyState() {
 }
 _b(useFancyState, `useState{[foo, setFoo](0)}
 useFancyEffect{}`, false, () => [useFancyEffect]);
-const useFancyEffect = _c(() => {
+const useFancyEffect = () => {
     _c();
     React.useEffect(() => { });
-}, "useEffect{}");
+};
+_c(useFancyEffect, "useEffect{}");
 export default function App() {
     _d();
     const bar = useFancyState();

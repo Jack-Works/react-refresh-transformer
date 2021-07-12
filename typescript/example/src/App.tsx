@@ -1,6 +1,11 @@
+import { useEffect } from 'react'
 import { Component } from './Component'
 
-export function App() {
+export const App = () => {
+    useEffect(() => {
+        console.log('render')
+    }, [])
+
     return (
         <div>
             <Component />

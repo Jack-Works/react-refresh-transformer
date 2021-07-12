@@ -7,7 +7,8 @@
     "scripts": {
         "test": "jest",
         "build": "pika-pack build",
-        "version": "npm run build"
+        "version": "npm run build",
+        "update-snapshot": "jest -u"
     },
     "repository": {
         "type": "git",

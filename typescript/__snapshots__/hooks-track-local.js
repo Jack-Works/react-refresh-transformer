@@ -9,7 +9,8 @@ function useLocal() {
     return useState(0);
 }
 _b(useLocal, "useState{(0)}");
-const useLocal2 = _c(() => (_c(), useLocal()), "useLocal{}", false, () => [useLocal]);
+const useLocal2 = () => (_c(), useLocal());
+_c(useLocal2, "useLocal{}", false, () => [useLocal]);
 function App() {
     _d();
     useLocal(useLocal2());
