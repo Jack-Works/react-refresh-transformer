@@ -1,6 +1,6 @@
 # react-refresh-typescript
 
-This package currently matches the upstream runtime of [`react-refresh@0.11.*`](https://github.com/facebook/react/commit/ff9897d23ec713d4e0c802386dffe4024916749e).
+This package currently matches the upstream runtime of [`react-refresh@0.13.*`](https://github.com/facebook/react/commit/72b7462fe73ea2f7bc296bc58670baf9677ce8b2).
 
 This package implements the plugin to integrate Fast Refresh into bundlers. Fast Refresh is a feature that lets you edit React components in a running application without losing their state.
 
