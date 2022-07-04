@@ -7,7 +7,7 @@
         "html-webpack-plugin": "^5.5.0",
         "react": "^18.1.0",
         "react-dom": "^18.1.0",
-        "react-refresh": "^0.13.0",
+        "react-refresh": "^0.14.0",
         "react-refresh-typescript": "workspace:*",
         "ts-loader": "^9.3.0",
         "ts-node": "^10.8.0",

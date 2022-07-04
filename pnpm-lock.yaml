@@ -42,7 +42,7 @@ importers:
       html-webpack-plugin: ^5.5.0
       react: ^18.1.0
       react-dom: ^18.1.0
-      react-refresh: ^0.13.0
+      react-refresh: ^0.14.0
       react-refresh-typescript: workspace:*
       ts-loader: ^9.3.0
       ts-node: ^10.8.0
@@ -51,14 +51,14 @@ importers:
       webpack-cli: ^4.9.2
       webpack-dev-server: ^4.9.0
     dependencies:
-      '@pmmmwh/react-refresh-webpack-plugin': 0.5.7_dht25cu4po3ounlhlctzwihdn4
+      '@pmmmwh/react-refresh-webpack-plugin': 0.5.7_7z5mvgkjii7wdl52paxljr4zjq
       '@types/react': 18.0.9
       '@types/react-dom': 18.0.5
       '@types/webpack-dev-server': 4.7.2_smhu6mcfcg7aivfsuosc335k3u
       html-webpack-plugin: 5.5.0_webpack@5.72.1
       react: 18.1.0
       react-dom: 18.1.0_react@18.1.0
-      react-refresh: 0.13.0
+      react-refresh: 0.14.0
       react-refresh-typescript: link:..
       ts-loader: 9.3.0_d3ofjbjbkerjqvgldod72xzm2y
       ts-node: 10.8.0_typescript@4.7.2
@@ -1759,7 +1759,7 @@ packages:
     resolution: {integrity: sha512-AzZTkHtM0A67+xMVhmSeJDteSMS+RfXGuM+/oVbo1PGD19ic7fuimv5b0TW8dKoZuxpVxiwVAai+sFRSNmfI3g==}
     dev: true
 
-  /@pmmmwh/react-refresh-webpack-plugin/0.5.7_dht25cu4po3ounlhlctzwihdn4:
+  /@pmmmwh/react-refresh-webpack-plugin/0.5.7_7z5mvgkjii7wdl52paxljr4zjq:
     resolution: {integrity: sha512-bcKCAzF0DV2IIROp9ZHkRJa6O4jy7NlnHdWL3GmcUxYWNjLXkK5kfELELwEfSP5hXPfVL/qOGMAROuMQb9GG8Q==}
     engines: {node: '>= 10.13'}
     peerDependencies:
@@ -1792,7 +1792,7 @@ packages:
       find-up: 5.0.0
       html-entities: 2.3.3
       loader-utils: 2.0.2
-      react-refresh: 0.13.0
+      react-refresh: 0.14.0
       schema-utils: 3.1.1
       source-map: 0.7.3
       webpack: 5.72.1_webpack-cli@4.9.2
@@ -6133,8 +6133,8 @@ packages:
     resolution: {integrity: sha512-Fl7FuabXsJnV5Q1qIOQwx/sagGF18kogb4gpfcG4gjLBWO0WDiiz1ko/ExayuxE7InyQkBLkxRFG5oxY6Uu3Kg==}
     dev: true
 
-  /react-refresh/0.13.0:
-    resolution: {integrity: sha512-XP8A9BT0CpRBD+NYLLeIhld/RqG9+gktUjW1FkE+Vm7OCinbG1SshcK5tb9ls4kzvjZr9mOQc7HYgBngEyPAXg==}
+  /react-refresh/0.14.0:
+    resolution: {integrity: sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==}
     engines: {node: '>=0.10.0'}
     dev: false
 
