@@ -180,7 +180,7 @@ export default function (opts: Options = {}): TransformerFactory<SourceFile> {
             if (!startsWithLowerCase(name.text)) {
                 const temp = createTempVariable()
                 // uniq = name
-                const assignment = factory.createAssignment(temp, factory.createIdentifier(name.text))
+                const assignment = factory.createAssignment(temp, name)
                 // $reg$(uniq, "name")
                 return [factory.createExpressionStatement(assignment), createComponentRegisterCall(temp, name.text)]
             }
@@ -230,11 +230,7 @@ export default function (opts: Options = {}): TransformerFactory<SourceFile> {
             }
         }
         function createTempVariable() {
-            return factory.createTempVariable(
-                context.hoistVariableDeclaration,
-                // @ts-ignore the second parameter "reservedInNestedScopes?: boolean" has a private signature
-                true
-            )
+            return factory.createTempVariable(context.hoistVariableDeclaration, true)
         }
         /**
          * ! This function does not consider variable shadowing !
