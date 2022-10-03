@@ -159,7 +159,6 @@ export default function (opts: Options = {}): TransformerFactory<SourceFile> {
                     return [
                         factory.updateExportAssignment(
                             node,
-                            node.decorators,
                             node.modifiers,
                             factory.createAssignment(temp, call)
                         ),
@@ -169,7 +168,7 @@ export default function (opts: Options = {}): TransformerFactory<SourceFile> {
                 } else if (isFunctionExpressionLikeOrFunctionDeclaration(node.expression)) {
                     const expr = hooksSignatureMap.get(node.expression)
                     if (expr) {
-                        return factory.updateExportAssignment(node, node.decorators, node.modifiers, expr)
+                        return factory.updateExportAssignment(node, node.modifiers, expr)
                     }
                 }
             }
@@ -485,7 +484,6 @@ export default function (opts: Options = {}): TransformerFactory<SourceFile> {
                 if (!ts.isBlock(nextBody)) throw new TypeError()
                 return factory.updateFunctionDeclaration(
                     node,
-                    node.decorators,
                     node.modifiers,
                     node.asteriskToken,
                     node.name,
