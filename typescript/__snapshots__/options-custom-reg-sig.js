@@ -1,12 +1,12 @@
-var _a;
-var _b;
-_b = $RefreshSig$();
+var _react_refresh_temp_1;
+var _react_refresh_temp_2;
+_react_refresh_temp_2 = $RefreshSig$();
 // ? uses custom identifiers for $RefreshReg$ and $RefreshSig$
 export default function Bar() {
-    _b();
+    _react_refresh_temp_2();
     useContext(X);
     return <Foo />;
 }
-_a = Bar;
-$RefreshReg$(_a, "Bar");
-_b(Bar, "useContext{}");
+_react_refresh_temp_1 = Bar;
+$RefreshReg$(_react_refresh_temp_1, "Bar");
+_react_refresh_temp_2(Bar, "useContext{}");

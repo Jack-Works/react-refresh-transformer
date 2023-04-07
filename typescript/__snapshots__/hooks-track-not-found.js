@@ -1,11 +1,11 @@
-var _a;
-var _b;
-_b = $RefreshSig$();
+var _react_refresh_temp_1;
+var _react_refresh_temp_2;
+_react_refresh_temp_2 = $RefreshSig$();
 // ? should track custom hooks
 function App() {
-    _b();
+    _react_refresh_temp_2();
     useDeclarationNotFound();
 }
-_a = App;
-$RefreshReg$(_a, "App");
-_b(App, "useDeclarationNotFound{}", true);
+_react_refresh_temp_1 = App;
+$RefreshReg$(_react_refresh_temp_1, "App");
+_react_refresh_temp_2(App, "useDeclarationNotFound{}", true);

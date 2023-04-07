@@ -1,9 +1,9 @@
-var _a;
-var _b;
-_b = $RefreshSig$();
+var _react_refresh_temp_1;
+var _react_refresh_temp_2;
+_react_refresh_temp_2 = $RefreshSig$();
 // ? should generate signature for built-in hooks
 export function StateTest() {
-    _b();
+    _react_refresh_temp_2();
     const a = useState(0, extra);
     const [b] = useState(complex + expression.f());
     const [c, d] = React.useState();
@@ -15,9 +15,9 @@ export function StateTest() {
         expression();
     });
 }
-_a = StateTest;
-$RefreshReg$(_a, "StateTest");
-_b(StateTest, `useState{a(0)}
+_react_refresh_temp_1 = StateTest;
+$RefreshReg$(_react_refresh_temp_1, "StateTest");
+_react_refresh_temp_2(StateTest, `useState{a(0)}
 useState{[b](complex + expression.f())}
 useState{[c, d]}
 useState{[[e], f]([0])}

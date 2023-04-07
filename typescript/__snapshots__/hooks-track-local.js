@@ -1,21 +1,21 @@
-var _a;
-var _b, _c, _d;
-_b = $RefreshSig$();
-_c = $RefreshSig$();
-_d = $RefreshSig$();
+var _react_refresh_temp_1;
+var _react_refresh_temp_2, _react_refresh_temp_3, _react_refresh_temp_4;
+_react_refresh_temp_2 = $RefreshSig$();
+_react_refresh_temp_3 = $RefreshSig$();
+_react_refresh_temp_4 = $RefreshSig$();
 // ? should track custom hooks
 function useLocal() {
-    _b();
+    _react_refresh_temp_2();
     return useState(0);
 }
-_b(useLocal, "useState{(0)}");
-const useLocal2 = () => (_c(), useLocal());
-_c(useLocal2, "useLocal{}", false, () => [useLocal]);
+_react_refresh_temp_2(useLocal, "useState{(0)}");
+const useLocal2 = () => (_react_refresh_temp_3(), useLocal());
+_react_refresh_temp_3(useLocal2, "useLocal{}", false, () => [useLocal]);
 function App() {
-    _d();
+    _react_refresh_temp_4();
     useLocal(useLocal2());
 }
-_a = App;
-$RefreshReg$(_a, "App");
-_d(App, `useLocal{}
+_react_refresh_temp_1 = App;
+$RefreshReg$(_react_refresh_temp_1, "App");
+_react_refresh_temp_4(App, `useLocal{}
 useLocal2{}`, false, () => [useLocal, useLocal2]);

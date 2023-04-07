@@ -1,4 +1,4 @@
-var _a;
+var _react_refresh_temp_1;
 // ? ignores complex definitions
 let A = foo
     ? () => {
@@ -11,8 +11,8 @@ const B = (function Foo() {
 let C = () => () => {
     return <h1>Hi</h1>;
 };
-_a = C;
-$RefreshReg$(_a, "C");
+_react_refresh_temp_1 = C;
+$RefreshReg$(_react_refresh_temp_1, "C");
 let D = bar &&
     (() => {
         return <h1>Hi</h1>;

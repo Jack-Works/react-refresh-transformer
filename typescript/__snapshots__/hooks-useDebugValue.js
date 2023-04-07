@@ -1,11 +1,11 @@
-var _a;
-var _b;
-_b = $RefreshSig$();
+var _react_refresh_temp_1;
+var _react_refresh_temp_2;
+_react_refresh_temp_2 = $RefreshSig$();
 // ? should generate signature for built-in hooks
 function DebugValue() {
-    _b();
+    _react_refresh_temp_2();
     const v = useDebugValue(ref, f);
 }
-_a = DebugValue;
-$RefreshReg$(_a, "DebugValue");
-_b(DebugValue, "useDebugValue{v}");
+_react_refresh_temp_1 = DebugValue;
+$RefreshReg$(_react_refresh_temp_1, "DebugValue");
+_react_refresh_temp_2(DebugValue, "useDebugValue{v}");

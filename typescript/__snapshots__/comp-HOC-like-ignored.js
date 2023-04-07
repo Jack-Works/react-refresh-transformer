@@ -1,9 +1,9 @@
-var _a;
+var _react_refresh_temp_1;
 // ? ignores higher-order functions that are not HOCs
-const throttledAlert = throttle(_a = function () {
+const throttledAlert = throttle(_react_refresh_temp_1 = function () {
     alert('Hi');
 });
-$RefreshReg$(_a, "throttledAlert$throttle");
+$RefreshReg$(_react_refresh_temp_1, "throttledAlert$throttle");
 const TooComplex = (function () {
     return hello;
 })(() => { });

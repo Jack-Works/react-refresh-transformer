@@ -1,8 +1,8 @@
-var _a, _b, _c;
+var _react_refresh_temp_1, _react_refresh_temp_2, _react_refresh_temp_3;
 // ? registers likely HOCs with inline functions
-export default _c = React.memo(_a = forwardRef(_b = function (props, ref) {
+export default _react_refresh_temp_3 = React.memo(_react_refresh_temp_1 = forwardRef(_react_refresh_temp_2 = function (props, ref) {
     return <h1>Foo</h1>;
 }));
-$RefreshReg$(_c, "%default%");
-$RefreshReg$(_b, "%default%$React.memo$forwardRef");
-$RefreshReg$(_a, "%default%$React.memo");
+$RefreshReg$(_react_refresh_temp_3, "%default%");
+$RefreshReg$(_react_refresh_temp_2, "%default%$React.memo$forwardRef");
+$RefreshReg$(_react_refresh_temp_1, "%default%$React.memo");
