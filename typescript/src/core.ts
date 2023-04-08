@@ -229,11 +229,10 @@ export default function (opts: Options = {}): TransformerFactory<SourceFile> {
             }
         }
         function createTempVariable() {
-            return factory.createTempVariable(context.hoistVariableDeclaration, true)
+            const tempVariable = factory.createUniqueName("_react_refresh_temp")
+            context.hoistVariableDeclaration(tempVariable)
+            return tempVariable
         }
-        /**
-         * ! This function does not consider variable shadowing !
-         */
         function visitDeep(
             file: SourceFile,
             topLevelDeclaredName: ReadonlySet<string>,

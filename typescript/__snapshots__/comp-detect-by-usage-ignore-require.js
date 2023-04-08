@@ -1,4 +1,4 @@
-var _a;
+var _react_refresh_temp_1;
 // ? does not consider require-like methods to be HOCs
 const A = require('A');
 const B = foo ? require('X') : require('Y');
@@ -12,5 +12,5 @@ export default function App() {
             <D />
         </div>);
 }
-_a = App;
-$RefreshReg$(_a, "App");
+_react_refresh_temp_1 = App;
+$RefreshReg$(_react_refresh_temp_1, "App");

@@ -1,14 +1,14 @@
-var _a, _b;
+var _react_refresh_temp_1, _react_refresh_temp_2;
 // ? registers top-level exported named arrow functions
 export const Hello = () => {
     function handleClick() { }
     return <h1 onClick={handleClick}>Hi</h1>;
 };
-_a = Hello;
-$RefreshReg$(_a, "Hello");
+_react_refresh_temp_1 = Hello;
+$RefreshReg$(_react_refresh_temp_1, "Hello");
 export let Bar = (props) => <Hello />;
-_b = Bar;
-$RefreshReg$(_b, "Bar");
+_react_refresh_temp_2 = Bar;
+$RefreshReg$(_react_refresh_temp_2, "Bar");
 export default () => {
     // This one should be ignored.
     // You should name your components.

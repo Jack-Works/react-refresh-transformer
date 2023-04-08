@@ -1,4 +1,4 @@
-var _a, _b, _c, _d, _e, _f, _g;
+var _react_refresh_temp_1, _react_refresh_temp_2, _react_refresh_temp_3, _react_refresh_temp_4, _react_refresh_temp_5, _react_refresh_temp_6, _react_refresh_temp_7;
 // ? registers identifiers used in JSX at definition site
 import A from './A';
 import Store from './Store';
@@ -6,19 +6,19 @@ Store.subscribe();
 const Header = styled.div `
     color: red;
 `;
-_a = Header;
-$RefreshReg$(_a, "Header");
+_react_refresh_temp_1 = Header;
+$RefreshReg$(_react_refresh_temp_1, "Header");
 const StyledFactory1 = styled('div') `
     color: hotpink;
 `;
-_b = StyledFactory1;
-$RefreshReg$(_b, "StyledFactory1");
+_react_refresh_temp_2 = StyledFactory1;
+$RefreshReg$(_react_refresh_temp_2, "StyledFactory1");
 const StyledFactory2 = styled('div')({ color: 'hotpink' });
-_c = StyledFactory2;
-$RefreshReg$(_c, "StyledFactory2");
+_react_refresh_temp_3 = StyledFactory2;
+$RefreshReg$(_react_refresh_temp_3, "StyledFactory2");
 const StyledFactory3 = styled(A)({ color: 'hotpink' });
-_d = StyledFactory3;
-$RefreshReg$(_d, "StyledFactory3");
+_react_refresh_temp_4 = StyledFactory3;
+$RefreshReg$(_react_refresh_temp_4, "StyledFactory3");
 const FunnyFactory = funny.factory ``;
 let Alias1 = A;
 let Alias2 = A.Foo;
@@ -36,12 +36,12 @@ function Foo() {
             <Dict.X />
         </div>);
 }
-_e = Foo;
-$RefreshReg$(_e, "Foo");
+_react_refresh_temp_5 = Foo;
+$RefreshReg$(_react_refresh_temp_5, "Foo");
 const B = hoc(A);
-_f = B;
-$RefreshReg$(_f, "B");
+_react_refresh_temp_6 = B;
+$RefreshReg$(_react_refresh_temp_6, "B");
 // This is currently registered as a false positive:
 const NotAComponent = wow(A);
-_g = NotAComponent;
-$RefreshReg$(_g, "NotAComponent");
+_react_refresh_temp_7 = NotAComponent;
+$RefreshReg$(_react_refresh_temp_7, "NotAComponent");

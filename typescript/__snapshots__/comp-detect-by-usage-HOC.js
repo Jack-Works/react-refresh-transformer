@@ -1,15 +1,15 @@
-var _a, _b, _c, _d;
+var _react_refresh_temp_1, _react_refresh_temp_2, _react_refresh_temp_3, _react_refresh_temp_4;
 // ? registers capitalized identifiers in HOC calls
 function Foo() {
     return <h1>Hi</h1>;
 }
-_a = Foo;
-$RefreshReg$(_a, "Foo");
-export default _b = hoc(Foo);
-$RefreshReg$(_b, "%default%");
+_react_refresh_temp_1 = Foo;
+$RefreshReg$(_react_refresh_temp_1, "Foo");
+export default _react_refresh_temp_2 = hoc(Foo);
+$RefreshReg$(_react_refresh_temp_2, "%default%");
 export const A = hoc(Foo);
-_c = A;
-$RefreshReg$(_c, "A");
+_react_refresh_temp_3 = A;
+$RefreshReg$(_react_refresh_temp_3, "A");
 const B = hoc(Foo);
-_d = B;
-$RefreshReg$(_d, "B");
+_react_refresh_temp_4 = B;
+$RefreshReg$(_react_refresh_temp_4, "B");
