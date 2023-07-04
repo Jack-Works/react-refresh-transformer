@@ -1,5 +1,5 @@
-/// <reference path="../node_modules/@types/jest/index.d.ts" />
-/// <reference path="../node_modules/@types/node/index.d.ts" />
+/// <reference path="./node_modules/@types/jest/index.d.ts" />
+/// <reference path="./node_modules/@types/node/index.d.ts" />
 import ts, { CompilerOptions } from 'typescript'
 import tsTransformer, { Options } from './src/index'
 import { toMatchFile } from 'jest-file-snapshot'
