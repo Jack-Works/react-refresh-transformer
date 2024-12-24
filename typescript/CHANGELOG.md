@@ -1,5 +1,9 @@
 # Change Log - react-refresh-typescript
 
+## 2.0.10
+
+Add support for react-refresh 0.17.x (React 19).
+
 ## 2.0.3
 
 Add support for react-refresh 0.12.x.

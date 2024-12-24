@@ -530,8 +530,14 @@ export default function (opts: Options = {}): TransformerFactory<SourceFile> {
             case 'useContext':
             case 'useImperativeHandle':
             case 'useDebugValue':
-            case 'useTransition':
+            case 'useId':
             case 'useDeferredValue':
+            case 'useTransition':
+            case 'useInsertionEffect':
+            case 'useSyncExternalStore':
+            case 'useFormState':
+            case 'useActionState':
+            case 'useOptimistic':
                 return true
             default:
                 return false
