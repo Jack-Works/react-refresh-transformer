@@ -1,10 +1,9 @@
-/// <reference path="./node_modules/@types/jest/index.d.ts" />
-/// <reference path="./node_modules/@types/node/index.d.ts" />
 import ts, { CompilerOptions } from 'typescript'
 import tsTransformer, { Options } from './src/index'
 import { toMatchFile } from 'jest-file-snapshot'
-import { readdirSync, readFileSync } from 'fs'
-import { join } from 'path'
+import { readdirSync, readFileSync } from 'node:fs'
+import { join } from 'node:path'
+import { expect, it } from 'vitest'
 
 expect.extend({ toMatchFile })
 
@@ -20,7 +19,7 @@ function transform(input: string, options: Options, compilerOptions?: CompilerOp
     }).outputText
 }
 
-const sourceFolder = join(__dirname, '../tests')
+const sourceFolder = join(__dirname, './tests')
 const testFiles = readdirSync(sourceFolder)
 for (const fileName of testFiles) {
     const code = readFileSync(join(sourceFolder, fileName), { encoding: 'utf-8' })

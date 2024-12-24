@@ -1,4 +1,4 @@
-import {
+import type {
     ArrowFunction,
     Block,
     CallExpression,
@@ -9,14 +9,12 @@ import {
     FunctionDeclaration,
     FunctionExpression,
     Identifier,
-    isFunctionLike,
     ModuleBlock,
     Node,
     NodeArray,
     SourceFile,
     Statement,
     TransformerFactory,
-    visitEachChild,
     VisitResult,
 } from 'typescript'
 
@@ -111,12 +109,12 @@ export default function (opts: Options = {}): TransformerFactory<SourceFile> {
                                 // this is a workaround to https://github.com/Jack-Works/react-refresh-transformer/issues/8
                                 // I don't have time to refactor it yet.
                                 let oneShot: any = false
-                                const sig = visitEachChild(
+                                const sig = ts.visitEachChild(
                                     hooksSignatureMap.get(init)!,
                                     (node) =>
                                         oneShot
                                             ? node
-                                            : isFunctionLike(node)
+                                            : ts.isFunctionLike(node)
                                             ? (oneShot = declaration.name as Identifier)
                                             : node,
                                     context
@@ -157,11 +155,7 @@ export default function (opts: Options = {}): TransformerFactory<SourceFile> {
                     )
                     const temp = createTempVariable()
                     return [
-                        factory.updateExportAssignment(
-                            node,
-                            node.modifiers,
-                            factory.createAssignment(temp, call)
-                        ),
+                        factory.updateExportAssignment(node, node.modifiers, factory.createAssignment(temp, call)),
                         createComponentRegisterCall(temp, '%default%'),
                         ...registers,
                     ]
@@ -229,7 +223,7 @@ export default function (opts: Options = {}): TransformerFactory<SourceFile> {
             }
         }
         function createTempVariable() {
-            const tempVariable = factory.createUniqueName("_react_refresh_temp")
+            const tempVariable = factory.createUniqueName('_react_refresh_temp')
             context.hoistVariableDeclaration(tempVariable)
             return tempVariable
         }

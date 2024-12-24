@@ -1,26 +1,49 @@
 {
-    "name": "react-refresh-transformers",
-    "packageManager": "pnpm@9.15.1",
-    "private": true,
-    "version": "0.0.0",
-    "description": "React Refresh transformers",
-    "scripts": {},
+    "name": "react-refresh-typescript",
+    "version": "2.0.10",
+    "description": "React Refresh transformer for TypeScript",
+    "types": "./dist/index.d.ts",
+    "main": "./dist/index.js",
+    "exports": {
+        ".": {
+            "import": {
+                "types": "./dist/index.d.ts",
+                "default": "./index.mjs"
+            },
+            "require": {
+                "types": "./dist/index.d.ts",
+                "default": "./dist/index.js"
+            }
+        },
+        "./package.json": "./package.json"
+    },
+    "scripts": {
+        "test": "vitest"
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/Jack-Works/react-refresh-transformer.git"
     },
+    "keywords": [
+        "react",
+        "refresh",
+        "transformer",
+        "typescript"
+    ],
     "author": "Jack Works",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/Jack-Works/react-refresh-transformer/issues"
     },
     "homepage": "https://github.com/Jack-Works/react-refresh-transformer#readme",
-    "devDependencies": {
-        "ts-jest": "~29.2.5",
-        "ts-node": "~10.9.2",
-        "typescript": "~5.7.2"
+    "peerDependencies": {
+        "react-refresh": "0.10.x || 0.11.x || 0.12.x || 0.13.x || 0.14.x || 0.15.x || 0.16.x || 0.17.x",
+        "typescript": "^4.8 || ^5.0"
     },
-    "pnpm": {
-        "onlyBuiltDependencies": []
-    }
+    "devDependencies": {
+        "@types/node": "~22.10.2",
+        "vitest": "~2.1.8",
+        "jest-file-snapshot": "~0.7.0"
+    },
+    "packageManager": "pnpm@9.15.1+sha512.1acb565e6193efbebda772702950469150cf12bcc764262e7587e71d19dc98a423dff9536e57ea44c49bdf790ff694e83c27be5faa23d67e0c033b583be4bfcf"
 }

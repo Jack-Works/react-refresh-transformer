@@ -1,10 +1,10 @@
 {
     "compilerOptions": {
-        "module": "ESNext",
+        "module": "NodeNext",
         "target": "es2020",
         "esModuleInterop": true,
         "jsx": "react-jsxdev",
-        "moduleResolution": "Node",
+        "moduleResolution": "NodeNext",
         "sourceMap": true
     },
     "ts-node": {
