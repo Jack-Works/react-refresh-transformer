@@ -12,13 +12,14 @@
             },
             "require": {
                 "types": "./dist/index.d.ts",
-                "default": "./dist/index.js"
+                "default": "./index.js"
             }
         },
         "./package.json": "./package.json"
     },
     "scripts": {
-        "test": "vitest"
+        "test": "vitest",
+        "build": "tsc -p tsconfig.json"
     },
     "repository": {
         "type": "git",
@@ -37,18 +38,20 @@
     },
     "homepage": "https://github.com/Jack-Works/react-refresh-transformer#readme",
     "peerDependencies": {
-        "react-refresh": "0.10.x || 0.11.x || 0.12.x || 0.13.x || 0.14.x || 0.15.x || 0.16.x || 0.17.x || 0.18.x",
+        "react-refresh": "0.10.x || 0.11.x || 0.12.x || 0.13.x || 0.14.x || 0.15.x || 0.16.x || 0.17.x || 0.18.x || 0.19.x",
         "typescript": "^4.8 || ^5.0"
     },
     "devDependencies": {
-        "@types/node": "~22.10.2",
-        "vitest": "~2.1.8",
-        "jest-file-snapshot": "~0.7.0"
+        "@types/node": "~24.6.2",
+        "vitest": "~3.2.4",
+        "jest-file-snapshot": "~0.7.0",
+        "typescript": "5.9.3"
     },
-    "packageManager": "pnpm@9.15.1+sha512.1acb565e6193efbebda772702950469150cf12bcc764262e7587e71d19dc98a423dff9536e57ea44c49bdf790ff694e83c27be5faa23d67e0c033b583be4bfcf",
+    "packageManager": "pnpm@10.18.0",
     "files": [
         "src",
         "dist",
-        "index.mjs"
+        "index.mjs",
+        "index.js"
     ]
 }
