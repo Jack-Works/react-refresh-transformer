@@ -37,7 +37,7 @@
     },
     "homepage": "https://github.com/Jack-Works/react-refresh-transformer#readme",
     "peerDependencies": {
-        "react-refresh": "0.10.x || 0.11.x || 0.12.x || 0.13.x || 0.14.x || 0.15.x || 0.16.x || 0.17.x",
+        "react-refresh": "0.10.x || 0.11.x || 0.12.x || 0.13.x || 0.14.x || 0.15.x || 0.16.x || 0.17.x || 0.18.x",
         "typescript": "^4.8 || ^5.0"
     },
     "devDependencies": {
