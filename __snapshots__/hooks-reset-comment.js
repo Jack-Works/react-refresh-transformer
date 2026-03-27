@@ -1,3 +1,4 @@
+"use strict";
 var _react_refresh_temp_1, _react_refresh_temp_2;
 var _react_refresh_temp_3, _react_refresh_temp_4;
 _react_refresh_temp_3 = $RefreshSig$();

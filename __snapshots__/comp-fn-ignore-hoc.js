@@ -1,3 +1,4 @@
+"use strict";
 // ? ignores HOC definitions
 let connect = () => {
     function Comp() {

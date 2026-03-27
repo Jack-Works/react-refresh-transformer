@@ -1,3 +1,4 @@
+"use strict";
 var _react_refresh_temp_1;
 // ? uses original function declaration if it get reassigned
 function Hello() {

@@ -1,3 +1,4 @@
+"use strict";
 var _react_refresh_temp_1;
 // ? ignores higher-order functions that are not HOCs
 const throttledAlert = throttle(_react_refresh_temp_1 = function () {

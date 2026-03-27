@@ -1,3 +1,4 @@
+"use strict";
 var _react_refresh_temp_1, _react_refresh_temp_2;
 // ? registers top-level variable declarations with function expressions
 let Hello = function () {

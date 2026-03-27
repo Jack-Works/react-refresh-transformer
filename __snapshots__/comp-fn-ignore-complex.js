@@ -1,3 +1,4 @@
+"use strict";
 var _react_refresh_temp_1;
 // ? ignores complex definitions
 let A = foo
